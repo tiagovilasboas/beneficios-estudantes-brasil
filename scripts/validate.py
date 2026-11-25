@@ -25,8 +25,9 @@ REQUIRED_FILES = (
     ".github/ISSUE_TEMPLATE/config.yml",
     "docs/validacao-brasil.md",
     "docs/criterios-e-fora-da-lista.md",
-    "assets/banner-dark.svg",
-    "assets/banner-light.svg",
+    "assets/hero-banner.png",
+    "assets/mapa-ecossistema-dark.svg",
+    "assets/mapa-ecossistema-light.svg",
 )
 MAX_MD_LINES = 300
 PLACEHOLDER_HOSTS = {"example.com", "example.org", "example.net", "localhost", "127.0.0.1"}
@@ -183,6 +184,11 @@ def validate_repo(check_urls: bool) -> int:
             ET.parse(svg)
         except ET.ParseError as exc:
             errors.append(f"{svg.relative_to(ROOT)}: invalid SVG XML ({exc})")
+
+    for png in sorted((ROOT / "assets").rglob("*.png")) if (ROOT / "assets").is_dir() else []:
+        header = png.read_bytes()[:8]
+        if len(header) < 8 or header != b"\x89PNG\r\n\x1a\n":
+            errors.append(f"{png.relative_to(ROOT)}: invalid or empty PNG file")
 
     if check_urls and not errors:
         urls = sorted(external_urls)

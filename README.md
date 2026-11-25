@@ -1,8 +1,6 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Benefícios para Estudantes no Brasil" src="assets/banner-light.svg" width="100%">
-</picture>
+<p align="center">
+  <img alt="Benefícios para Estudantes no Brasil - lista open source curada para o BR" src="assets/hero-banner.png" width="100%">
+</p>
 
 # Benefícios para Estudantes no Brasil
 
@@ -26,10 +24,11 @@
 3. **Configure o UNiDAYS e deixe o comprovante pronto para o SheerID:** essas duas validações destravam Apple Music, Samsung Estudantes, Spotify, YouTube Premium e Perplexity.
 4. **Resgate os planos avulsos de maior retorno:** Gemini, Figma Education, Notion Education e Microsoft 365 Education.
 
-```mermaid
-flowchart LR
-  A["Comprovantes BR"] --> B["GitHub Student Pack"] --> C["UNiDAYS e SheerID"] --> D["Planos Avulsos"] --> E["Meia-entrada e ID Jovem"]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/mapa-ecossistema-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/mapa-ecossistema-light.svg">
+  <img alt="Mapa de validação e benefícios para estudantes no Brasil" src="assets/mapa-ecossistema-light.svg" width="100%">
+</picture>
 
 <details>
 <summary>Checklist rápido de resgate (copie para suas notas)</summary>

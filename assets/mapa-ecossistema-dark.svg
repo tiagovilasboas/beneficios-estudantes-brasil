@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-label="Mapa de como destravar os benefícios para estudantes no Brasil">
+  <defs>
+    <marker id="arrow-emerald-d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10B981" />
+    </marker>
+    <marker id="arrow-purple-d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#A855F7" />
+    </marker>
+    <marker id="arrow-blue-d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#3B82F6" />
+    </marker>
+    <marker id="arrow-cyan-d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#06B6D4" />
+    </marker>
+    <marker id="arrow-gold-d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#F59E0B" />
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="538" rx="16" fill="#0D1117" stroke="#30363D" stroke-width="2" />
+
+  <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="36" y="42" fill="#F0F6FC" font-size="20" font-weight="700">Como destravar os benefícios no Brasil</text>
+    <text x="36" y="64" fill="#8B949E" font-size="13">Fluxo dos comprovantes brasileiros até os pacotes e direitos ativos</text>
+
+    <text x="36" y="98" fill="#8B949E" font-size="11" font-weight="700" letter-spacing="1.4">1. COMPROVANTES NO BR</text>
+    <text x="415" y="98" fill="#8B949E" font-size="11" font-weight="700" letter-spacing="1.4">2. PLATAFORMAS VALIDADORAS</text>
+    <text x="805" y="98" fill="#8B949E" font-size="11" font-weight="700" letter-spacing="1.4">3. BENEFÍCIOS DESTRAVADOS</text>
+  </g>
+
+  <!-- Column 1 -> Column 2 curves -->
+  <g fill="none" stroke-width="2" stroke-linecap="round">
+    <path d="M 306 178 C 362 178, 358 148, 415 148" stroke="#10B981" stroke-opacity="0.72" />
+    <path d="M 306 178 C 364 178, 358 230, 415 230" stroke="#10B981" stroke-opacity="0.55" />
+    <path d="M 306 178 C 366 178, 356 312, 415 312" stroke="#10B981" stroke-opacity="0.45" />
+    <path d="M 306 178 C 370 178, 354 394, 415 394" stroke="#10B981" stroke-opacity="0.45" />
+
+    <path d="M 306 310 C 354 310, 366 148, 415 148" stroke="#F59E0B" stroke-opacity="0.42" stroke-dasharray="5 4" />
+    <path d="M 306 310 C 360 310, 360 230, 415 230" stroke="#F59E0B" stroke-opacity="0.68" />
+    <path d="M 306 310 C 360 310, 360 312, 415 312" stroke="#F59E0B" stroke-opacity="0.68" />
+    <path d="M 306 310 C 360 310, 360 394, 415 394" stroke="#F59E0B" stroke-opacity="0.55" />
+    <path d="M 306 310 C 362 310, 358 476, 415 476" stroke="#F59E0B" stroke-opacity="0.75" />
+
+    <path d="M 306 442 C 360 442, 360 476, 415 476" stroke="#3B82F6" stroke-opacity="0.82" />
+  </g>
+
+  <!-- Column 2 -> Column 3 connectors -->
+  <g fill="none" stroke-width="2.2">
+    <path d="M 695 148 L 799 148" stroke="#10B981" marker-end="url(#arrow-emerald-d)" />
+    <path d="M 695 230 L 799 230" stroke="#A855F7" marker-end="url(#arrow-purple-d)" />
+    <path d="M 695 312 L 799 312" stroke="#3B82F6" marker-end="url(#arrow-blue-d)" />
+    <path d="M 695 394 L 799 394" stroke="#06B6D4" marker-end="url(#arrow-cyan-d)" />
+    <path d="M 695 476 L 799 476" stroke="#F59E0B" marker-end="url(#arrow-gold-d)" />
+  </g>
+
+  <!-- Column 1 cards -->
+  <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- Card 1 -->
+    <rect x="36" y="124" width="270" height="108" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="36" y="138" width="4" height="80" rx="2" fill="#10B981" />
+    <rect x="52" y="146" width="34" height="34" rx="8" fill="#10B981" fill-opacity="0.14" stroke="#10B981" stroke-opacity="0.4" />
+    <path d="M 60 156 L 78 156 L 78 170 L 60 170 Z M 60 157 L 69 164 L 78 157" fill="none" stroke="#10B981" stroke-width="1.6" stroke-linejoin="round" />
+    <text x="96" y="162" fill="#F0F6FC" font-size="15" font-weight="700">E-mail institucional</text>
+    <text x="96" y="184" fill="#C9D1D9" font-size="12.5">.edu.br ou domínio da faculdade</text>
+    <text x="96" y="205" fill="#8B949E" font-size="11.5">Validação automática rápida</text>
+    <circle cx="306" cy="178" r="4" fill="#10B981" />
+
+    <!-- Card 2 -->
+    <rect x="36" y="256" width="270" height="108" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="36" y="270" width="4" height="80" rx="2" fill="#F59E0B" />
+    <rect x="52" y="278" width="34" height="34" rx="8" fill="#F59E0B" fill-opacity="0.14" stroke="#F59E0B" stroke-opacity="0.4" />
+    <path d="M 61 287 L 77 287 L 77 303 L 61 303 Z M 64 292 L 74 292 M 64 297 L 72 297" fill="none" stroke="#F59E0B" stroke-width="1.6" stroke-linecap="round" />
+    <text x="96" y="294" fill="#F0F6FC" font-size="15" font-weight="700">Declaração ou DNE/CIE</text>
+    <text x="96" y="316" fill="#C9D1D9" font-size="12.5">PDF recente (até 90 dias)</text>
+    <text x="96" y="337" fill="#8B949E" font-size="11.5">Upload manual e meia-entrada</text>
+    <circle cx="306" cy="310" r="4" fill="#F59E0B" />
+
+    <!-- Card 3 -->
+    <rect x="36" y="388" width="270" height="108" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="36" y="402" width="4" height="80" rx="2" fill="#3B82F6" />
+    <rect x="52" y="410" width="34" height="34" rx="8" fill="#3B82F6" fill-opacity="0.14" stroke="#3B82F6" stroke-opacity="0.4" />
+    <path d="M 69 418 L 77 422 L 77 429 C 77 434 73 437 69 439 C 65 437 61 434 61 429 L 61 422 Z" fill="none" stroke="#3B82F6" stroke-width="1.6" stroke-linejoin="round" />
+    <text x="96" y="426" fill="#F0F6FC" font-size="15" font-weight="700">CadÚnico</text>
+    <text x="96" y="448" fill="#C9D1D9" font-size="12.5">15 a 29 anos · até 2 salários</text>
+    <text x="96" y="469" fill="#8B949E" font-size="11.5">Habilita ID Jovem e DNE grátis</text>
+    <circle cx="306" cy="442" r="4" fill="#3B82F6" />
+  </g>
+
+  <!-- Column 2 hub nodes -->
+  <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <rect x="415" y="114" width="280" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="415" y="124" width="4" height="48" rx="2" fill="#10B981" />
+    <text x="433" y="142" fill="#F0F6FC" font-size="14.5" font-weight="700">GitHub Education</text>
+    <text x="433" y="163" fill="#8B949E" font-size="12">1 aprovação libera 7 parceiros</text>
+    <circle cx="415" cy="148" r="3.5" fill="#10B981" />
+    <circle cx="695" cy="148" r="3.5" fill="#10B981" />
+
+    <rect x="415" y="196" width="280" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="415" y="206" width="4" height="48" rx="2" fill="#A855F7" />
+    <text x="433" y="224" fill="#F0F6FC" font-size="14.5" font-weight="700">SheerID</text>
+    <text x="433" y="245" fill="#8B949E" font-size="12">Gemini, streaming e IA no BR</text>
+    <circle cx="415" cy="230" r="3.5" fill="#A855F7" />
+    <circle cx="695" cy="230" r="3.5" fill="#A855F7" />
+
+    <rect x="415" y="278" width="280" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="415" y="288" width="4" height="48" rx="2" fill="#3B82F6" />
+    <text x="433" y="306" fill="#F0F6FC" font-size="14.5" font-weight="700">UNiDAYS Brasil</text>
+    <text x="433" y="327" fill="#8B949E" font-size="12">Ponte para Apple Music e Samsung</text>
+    <circle cx="415" cy="312" r="3.5" fill="#3B82F6" />
+    <circle cx="695" cy="312" r="3.5" fill="#3B82F6" />
+
+    <rect x="415" y="360" width="280" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="415" y="370" width="4" height="48" rx="2" fill="#06B6D4" />
+    <text x="433" y="388" fill="#F0F6FC" font-size="14.5" font-weight="700">Goodstack e Portais Diretos</text>
+    <text x="433" y="409" fill="#8B949E" font-size="12">Figma, Notion, Miro, M365, Autodesk</text>
+    <circle cx="415" cy="394" r="3.5" fill="#06B6D4" />
+    <circle cx="695" cy="394" r="3.5" fill="#06B6D4" />
+
+    <rect x="415" y="442" width="280" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <rect x="415" y="452" width="4" height="48" rx="2" fill="#F59E0B" />
+    <text x="433" y="470" fill="#F0F6FC" font-size="14.5" font-weight="700">Lei 12.933 e Gov BR</text>
+    <text x="433" y="491" fill="#8B949E" font-size="12">Meia-entrada e políticas públicas</text>
+    <circle cx="415" cy="476" r="3.5" fill="#F59E0B" />
+    <circle cx="695" cy="476" r="3.5" fill="#F59E0B" />
+  </g>
+
+  <!-- Column 3 outcome cards -->
+  <g font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- Row 1 -->
+    <rect x="805" y="114" width="360" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <text x="823" y="142" fill="#F0F6FC" font-size="14" font-weight="700">Copilot, JetBrains, Azure US$ 100</text>
+    <text x="823" y="163" fill="#8B949E" font-size="12">Namecheap .me, MongoDB, Heroku, GitKraken</text>
+    <rect x="1086" y="126" width="64" height="20" rx="10" fill="#10B981" fill-opacity="0.16" stroke="#10B981" stroke-opacity="0.5" />
+    <text x="1118" y="140" fill="#34D399" font-size="10" font-weight="700" text-anchor="middle">GRÁTIS</text>
+
+    <!-- Row 2 -->
+    <rect x="805" y="196" width="360" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <text x="823" y="224" fill="#F0F6FC" font-size="14" font-weight="700">Gemini AI Plus, Spotify, YouTube</text>
+    <text x="823" y="245" fill="#8B949E" font-size="12">Perplexity Pro e Grammarly</text>
+    <rect x="1076" y="208" width="74" height="20" rx="10" fill="#A855F7" fill-opacity="0.16" stroke="#A855F7" stroke-opacity="0.5" />
+    <text x="1113" y="222" fill="#C084FC" font-size="10" font-weight="700" text-anchor="middle">DESCONTO</text>
+
+    <!-- Row 3 -->
+    <rect x="805" y="278" width="360" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <text x="823" y="306" fill="#F0F6FC" font-size="14" font-weight="700">Apple Music + TV+ e Samsung</text>
+    <text x="823" y="327" fill="#8B949E" font-size="12">R$ 12,90/mês e até 30% off em hardware</text>
+    <rect x="1076" y="290" width="74" height="20" rx="10" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.5" />
+    <text x="1113" y="304" fill="#60A5FA" font-size="10" font-weight="700" text-anchor="middle">DESCONTO</text>
+
+    <!-- Row 4 -->
+    <rect x="805" y="360" width="360" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <text x="823" y="388" fill="#F0F6FC" font-size="14" font-weight="700">Figma, Notion, Miro, M365, Adobe</text>
+    <text x="823" y="409" fill="#8B949E" font-size="12">Autodesk, Unity, Linear, Loom, Asana</text>
+    <rect x="1086" y="372" width="64" height="20" rx="10" fill="#06B6D4" fill-opacity="0.16" stroke="#06B6D4" stroke-opacity="0.5" />
+    <text x="1118" y="386" fill="#22D3EE" font-size="10" font-weight="700" text-anchor="middle">GRÁTIS</text>
+
+    <!-- Row 5 -->
+    <rect x="805" y="442" width="360" height="68" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5" />
+    <text x="823" y="470" fill="#F0F6FC" font-size="14" font-weight="700">Meia-entrada 50% e ID Jovem</text>
+    <text x="823" y="491" fill="#8B949E" font-size="12">Cultura, viagens interestaduais e DNE grátis</text>
+    <rect x="1086" y="454" width="64" height="20" rx="10" fill="#F59E0B" fill-opacity="0.16" stroke="#F59E0B" stroke-opacity="0.5" />
+    <text x="1118" y="468" fill="#FBBF24" font-size="10" font-weight="700" text-anchor="middle">LEI BR</text>
+  </g>
+</svg>

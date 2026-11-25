@@ -6,12 +6,13 @@ Todas as mudanças relevantes deste repositório são documentadas neste arquivo
 
 ### Added
 
-- Banners SVG adaptativos para tema claro e escuro em `assets/banner-light.svg` e `assets/banner-dark.svg`.
-- Fluxo Mermaid de resgate, checklist rápido copiável e alertas de renovação no `README.md`.
+- Hero banner ilustrado em alta resolução (`assets/hero-banner.png`).
+- Diagrama visual adaptativo claro/escuro de 3 colunas (`assets/mapa-ecossistema-light.svg` e `assets/mapa-ecossistema-dark.svg`) mostrando o fluxo entre comprovantes no Brasil, plataformas validadoras e benefícios.
+- Árvore de decisão Mermaid em `docs/validacao-brasil.md`, checklist rápido copiável e alertas de renovação no `README.md`.
 - Arquivos de governança open source: `CODE_OF_CONDUCT.md`, `SECURITY.md`, `CHANGELOG.md` e `.editorconfig`.
 - Configuração de formulários em `.github/ISSUE_TEMPLATE/config.yml` e atualizações automáticas do Dependabot em `.github/dependabot.yml`.
 - Workflow semanal `.github/workflows/check-urls.yml` para detectar links quebrados (`404`/`410`).
-- Verificação de assets HTML locais e integridade XML de SVGs em `scripts/validate.py`.
+- Verificação de assets HTML locais, assinatura de PNGs e integridade XML de SVGs em `scripts/validate.py`.
 
 ## [2026-11-24]
 

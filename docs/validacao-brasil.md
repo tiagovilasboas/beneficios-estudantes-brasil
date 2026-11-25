@@ -9,6 +9,46 @@ Muitos estudantes no Brasil perdem benefícios porque algumas plataformas aceita
 - **CIE / DNE (Documento Nacional do Estudante):** emitido pela UNE, UBES ou ANPG com QR Code do ITI. Útil tanto para meia-entrada quanto para comprovação visual em análises manuais.
 - **Carteirinha da faculdade:** funciona melhor quando exibe validade impressa e nome da instituição por extenso.
 
+### Fluxo de decisão quando sua faculdade não valida de primeira
+
+```mermaid
+flowchart TD
+  Start["Inicio: quer ativar um beneficio no Brasil"] --> Email{"Tem e-mail .edu.br ou dominio da IES?"}
+
+  subgraph via_email["Caminho automatico"]
+    E1["Confirmar e-mail no GitHub Education e UNiDAYS"]
+    E2["Ativar Notion Plus e Microsoft 365 Education"]
+    E3{"Validou automaticamente?"}
+  end
+
+  subgraph via_doc["Caminho por documento"]
+    D1["Emitir declaracao de matricula em PDF recente"]
+    D2["Separar DNE, CIE ou boleto de rematricula"]
+    D3["Enviar upload manual no GitHub, SheerID, UNiDAYS, Miro e Autodesk"]
+  end
+
+  subgraph via_social["Elegibilidade social 15 a 29 anos"]
+    S1{"Inscrito no CadUnico com renda ate 2 salarios?"}
+    S2["Emitir ID Jovem gratuita"]
+    S3["Solicitar DNE gratuito e meia-entrada"]
+  end
+
+  Email -->|Sim| E1 --> E2 --> E3
+  E3 -->|Sim| Done["Beneficios liberados"]
+  E3 -->|Nao| D1
+  Email -->|Nao| D1 --> D2 --> D3 --> Done
+
+  Start --> S1
+  S1 -->|Sim| S2 --> S3 --> Done
+
+  classDef emerald fill:#065f46,stroke:#10b981,color:#ecfdf5
+  classDef gold fill:#78350f,stroke:#f59e0b,color:#fffbeb
+  classDef blue fill:#1e3a8a,stroke:#3b82f6,color:#eff6ff
+  class E1,E2,Done emerald
+  class D1,D2,D3 gold
+  class S2,S3 blue
+```
+
 ## 2. Plataformas de verificação usadas no Brasil
 
 ### GitHub Education (Student Developer Pack)
