@@ -1,0 +1,9 @@
+pre-commit:
+  commands:
+    validate:
+      run: python3 scripts/validate.py
+
+pre-push:
+  commands:
+    validate:
+      run: python3 scripts/validate.py

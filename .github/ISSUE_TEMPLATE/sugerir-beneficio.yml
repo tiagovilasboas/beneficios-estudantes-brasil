@@ -1,0 +1,67 @@
+name: Sugerir benefício
+description: Propor um novo benefício, desconto ou direito verificado para estudantes no Brasil.
+title: "Sugestão: "
+labels: ["novo-beneficio"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Envie um benefício por issue. Leia [CONTRIBUTING.md](../../CONTRIBUTING.md) antes de abrir.
+
+  - type: input
+    id: servico
+    attributes:
+      label: Nome do serviço ou programa
+      placeholder: Ex. Figma Education
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Link oficial
+      description: Página pública oficial do benefício usando https:// (sem afiliados).
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: dropdown
+    id: secao
+    attributes:
+      label: Categoria no README.md
+      options:
+        - GitHub Student Pack
+        - IA, Cloud e Dev
+        - Design e Produtividade
+        - Streaming e Hardware
+        - Cursos e Direitos no Brasil
+    validations:
+      required: true
+
+  - type: input
+    id: validacao
+    attributes:
+      label: Como valida no Brasil?
+      placeholder: Ex. SheerID com declaração de matrícula / e-mail .edu.br / UNiDAYS BR
+    validations:
+      required: true
+
+  - type: textarea
+    id: detalhes
+    attributes:
+      label: Benefício real e pegadinhas
+      description: O que o estudante ganha, por quanto tempo vale e se pede cartão ou cobra após o período grátis.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Verificação
+      options:
+        - label: Conferi que o item ainda não está no README.md nem em docs/criterios-e-fora-da-lista.md.
+          required: true
+        - label: Confirmei que exige status de estudante ou direito legal (não é plano gratuito padrão).
+          required: true
+        - label: Testei ou verifiquei que aceita estudantes no Brasil.
+          required: true

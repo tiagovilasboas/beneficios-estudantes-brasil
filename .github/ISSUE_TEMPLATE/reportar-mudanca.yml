@@ -1,0 +1,32 @@
+name: Reportar mudança ou link quebrado
+description: Avisar quando um benefício foi encerrado, mudou de preço no Brasil ou teve o link alterado.
+title: "Atualização: "
+labels: ["atualizacao"]
+body:
+  - type: input
+    id: servico
+    attributes:
+      label: Serviço listado no repositório
+      placeholder: Ex. Cursor Pro / Spotify Universitário
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: O que mudou?
+      options:
+        - Benefício encerrado ou descontinuado
+        - Deixou de funcionar no Brasil
+        - Mudança de preço, prazo ou regra de validação
+        - Link oficial quebrado ou redirecionando errado
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidência ou novo link oficial
+      description: Cole a URL oficial atualizada ou descreva o comportamento observado ao tentar resgatar no Brasil.
+    validations:
+      required: true
