@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Benefícios para Estudantes no Brasil" src="assets/banner-light.svg" width="100%">
+</picture>
+
 # Benefícios para Estudantes no Brasil
 
 > Lista curada de benefícios, planos gratuitos, descontos e direitos para estudantes universitários, técnicos e do ensino médio no Brasil: IA, programação, cloud, design, produtividade, streaming, hardware e meia-entrada verificados para quem estuda no BR.
@@ -20,9 +26,31 @@
 3. **Configure o UNiDAYS e deixe o comprovante pronto para o SheerID:** essas duas validações destravam Apple Music, Samsung Estudantes, Spotify, YouTube Premium e Perplexity.
 4. **Resgate os planos avulsos de maior retorno:** Gemini, Figma Education, Notion Education e Microsoft 365 Education.
 
+```mermaid
+flowchart LR
+  A["Comprovantes BR"] --> B["GitHub Student Pack"] --> C["UNiDAYS e SheerID"] --> D["Planos Avulsos"] --> E["Meia-entrada e ID Jovem"]
+```
+
+<details>
+<summary>Checklist rápido de resgate (copie para suas notas)</summary>
+
+- [ ] GitHub Student Developer Pack (Copilot e GitHub Pro)
+- [ ] IDEs da JetBrains (via GitHub Pack ou e-mail institucional)
+- [ ] Microsoft Azure for Students (US$ 100 sem cartão)
+- [ ] Google Gemini / AI Plus (1 ano grátis; agendar cancelamento antes de renovar)
+- [ ] Figma Education (plano Professional gratuito)
+- [ ] Notion Education (plano Plus com e-mail da faculdade)
+- [ ] Microsoft 365 Education (Office e OneDrive via instituição)
+- [ ] UNiDAYS Brasil (ponte para Samsung Estudantes e Apple Music)
+- [ ] Spotify Universitário, Apple Music ou YouTube Premium Estudante
+- [ ] DNE/CIE para meia-entrada ou ID Jovem (CadÚnico)
+
+</details>
+
 ## O que já vem no GitHub Student Pack
 
-Uma única aprovação no GitHub Student Developer Pack libera os itens abaixo sem precisar validar a carteirinha em cada parceiro. A DigitalOcean deixou o pacote.
+> [!TIP]
+> Uma única aprovação no GitHub Student Developer Pack libera todos os 7 parceiros abaixo sem precisar revalidar a carteirinha em cada plataforma. A DigitalOcean deixou o pacote.
 
 | Serviço | Benefício no Brasil | Como validar | Observação | Link |
 |---|---|---|---|---|
@@ -37,6 +65,9 @@ Uma única aprovação no GitHub Student Developer Pack libera os itens abaixo s
 ## Quais benefícios de IA, cloud e dev funcionam no Brasil?
 
 Planos de inteligência artificial, engenharia, segurança ofensiva e plataformas em nuvem com oferta estudantil ativa no Brasil.
+
+> [!IMPORTANT]
+> Alguns benefícios pedem cartão de crédito no resgate e cobram tarifa cheia após o período gratuito: o Google Gemini AI Plus passa a cobrar R$ 24,99/mês depois de 1 ano se não cancelar, e domínios da Namecheap renovam pagos no segundo ano.
 
 | Serviço | Benefício no Brasil | Como validar | Observação | Link |
 |---|---|---|---|---|
@@ -112,7 +143,7 @@ A lista completa com motivos e referências fica em [docs/criterios-e-fora-da-li
 
 ## Como contribuir
 
-Sugestões de novos benefícios verificados no Brasil, atualizações de preço, relatos de encerramento e correções de links são bem-vindos. Leia [CONTRIBUTING.md](CONTRIBUTING.md) e o guia de validação em [docs/validacao-brasil.md](docs/validacao-brasil.md) antes de abrir uma issue ou pull request.
+Sugestões de novos benefícios verificados no Brasil, atualizações de preço, relatos de encerramento e correções de links são bem-vindos. Consulte [CONTRIBUTING.md](CONTRIBUTING.md), o guia [docs/validacao-brasil.md](docs/validacao-brasil.md), o [Código de Conduta](CODE_OF_CONDUCT.md), a [Política de Segurança](SECURITY.md) e o [CHANGELOG.md](CHANGELOG.md), ou tire dúvidas em [GitHub Discussions](https://github.com/tiagovilasboas/beneficios-estudantes-brasil/discussions).
 
 ## Licença
 

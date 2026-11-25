@@ -11,19 +11,27 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_FILES = (
     "README.md",
     "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
     "LICENSE",
+    ".github/ISSUE_TEMPLATE/config.yml",
     "docs/validacao-brasil.md",
     "docs/criterios-e-fora-da-lista.md",
+    "assets/banner-dark.svg",
+    "assets/banner-light.svg",
 )
 MAX_MD_LINES = 300
 PLACEHOLDER_HOSTS = {"example.com", "example.org", "example.net", "localhost", "127.0.0.1"}
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+HTML_ATTR_RE = re.compile(r'\b(?:src|srcset)="([^"]+)"')
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
 FENCE_RE = re.compile(r"^\s*(```|~~~)")
 SOFT_HTTP_STATUS = {403, 405, 429, 999}
@@ -65,6 +73,11 @@ def parse_markdown(path: Path) -> tuple[list[str], set[str], list[tuple[int, str
             if target.startswith("<") and target.endswith(">"):
                 target = target[1:-1]
             links.append((lineno, current_h2, target))
+        for match in HTML_ATTR_RE.finditer(line):
+            for part in match.group(1).split(","):
+                asset = part.strip().split()[0] if part.strip() else ""
+                if asset and not asset.startswith(("https://", "http://", "data:")):
+                    links.append((lineno, current_h2, asset))
     return lines, slugs, links
 
 
@@ -164,6 +177,12 @@ def validate_repo(check_urls: bool) -> int:
                 errors.append(f"{rel}:{lineno}: missing relative path '{target}'")
             elif frag and resolved in parsed and frag not in parsed[resolved][1]:
                 errors.append(f"{rel}:{lineno}: broken anchor '{target}'")
+
+    for svg in sorted((ROOT / "assets").rglob("*.svg")) if (ROOT / "assets").is_dir() else []:
+        try:
+            ET.parse(svg)
+        except ET.ParseError as exc:
+            errors.append(f"{svg.relative_to(ROOT)}: invalid SVG XML ({exc})")
 
     if check_urls and not errors:
         urls = sorted(external_urls)

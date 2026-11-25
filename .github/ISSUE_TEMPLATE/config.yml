@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussões da comunidade
+    url: https://github.com/tiagovilasboas/beneficios-estudantes-brasil/discussions
+    about: Tire dúvidas sobre validação no Brasil, compartilhe dicas ou converse sobre novos benefícios.
+  - name: Guia de validação no Brasil
+    url: https://github.com/tiago.boas/beneficios-estudantes-brasil/blob/main/docs/validacao-brasil.md
+    about: Veja como comprovar matrícula com .edu.br, DNE/CIE, SheerID, UNiDAYS e Goodstack.
+  - name: Critérios e itens fora da lista
+    url: https://github.com/tiagovilasboas/beneficios-estudantes-brasil/blob/main/docs/criterios-e-fora-da-lista.md
+    about: Confira programas encerrados, indisponíveis no BR ou gratuitos para qualquer pessoa antes de sugerir.
